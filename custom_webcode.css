@@ -9,7 +9,12 @@
 @-moz-document domain("schelling.pt") {
     /* Insert code here... */
     body{
-        background: url("https://wallpapercave.com/wp/X9cUy04.jpg");
+        background: url("https://cdn.discordapp.com/attachments/1004229658662932560/1045797375274393760/starryNight.png");
+        
+        
+    }
+    .autosuggest-textarea__suggestions , .compose-form__buttons, .compose-form__buttons-wrapper  {
+        background-color:#ececec;
     }
     .search__input {
   background-color: #343f51;
@@ -51,16 +56,19 @@
 }
 
 .account__section-headline, .column-header__back-button {
-  background-color: #1b2a45 !important;
+  background-color: #003771 !important;
 }
 
 .status-link {
-  color: #73a9d1 !important;
+  color: #28ffff !important;
 }
-    .a, p, h1, h2, h3, h4, h5, h6 {
-        color: pink;
+    .a, p, h1, h2, h3, h4, h5, h6, i, b {
+        color: #fff;
     }
-
+.account__section-headline, span {
+       color: #fff;
+     text-shadow: 0 0 2.5px #000, 0 0 5px #000, 0 0 5px #96e4ff, 0 0 7px #96e4ff, 0 0 10px #96e4ff, 0 0 12px #96e4ff, 0 0 10px #96e4ff; 
+    }
 .account__header > div {
   background: rgba(27, 42, 69, 0.9);
 }
@@ -69,14 +77,17 @@
 .column-header, .column-header__button, .column-back-button, .hero-widget__text, .status.status-direct:not(.read) {
   background-color: #08152b;
 }
-
+    .status__wrapper, .item-list, .scrollable, .columns-area, .columns-area--mobile, .column, article {
+        background-color: #c2c5ca94;
+    }
 .account__header .account__header__fields dd,
 .public-account-bio .account__header__fields dd,
 .drawer__inner, .drawer__inner__mastodon {
-  background-color: rgba(27, 42, 69, 0.9);
+  background-color: rgba(27, 42, 69, 0.1);
 }
+    /* Important, the LHS, RHS columns */
     .columns-area__panels__pane__inner {
-        background-color: limegreen;
+        background-color: #0c0d0c8f;
         border-style: solid;
         border-width: 5px;
     }
@@ -88,20 +99,27 @@
 
 article, .status-public, .activity-stream .entry, .column > .scrollable,
   .drawer__header, .landing-page__information {
-  background-color: #0b1d3a;
+  background-color: #6b6d6f40;
 }
 
+    /*Some right hand side stuff */
 .column-link {
-  color:#8ba9c7;
-  background-color:#1e2a3e;
+  /*color:#8ba9c7; */
+     color: #fff;
+     text-shadow: 0 0 2.5px #000, 0 0 5px #000, 0 0 10px #96e4ff, 0 0 15px #96e4ff, 0 0 20px #96e4ff, 0 0 27px #96e4ff, 0 0 43px #96e4ff;
+  background-color:#e8fb5800;
+   
 }
 
+.display-name__html, strong {
+        color:#fff
+    }
 .column-link:hover {
-  background-color: rgba(27, 42, 69, 0.9);
+  background-color: rgba(160, 195, 198, .55);
 }
 
 .status-reply {
-  background-color: #071a3a;
+  background-color: #6b6d6f40; /*default so to speak: #071a3a | this handles any weird prt of federated timeline, etc that isnt got by */
 }
 
 .detailed-status__action-bar {
